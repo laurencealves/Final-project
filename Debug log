@@ -1,1 +1,18 @@
+Debug log 
+1. Knowing how to solder - I didn’t know how to solder before this project, so I needed to ask Adam to teach me. Even after this, every time I need to solder made me really anxious, because you can’t miss it, specially when working with wearable electronics, that  are really small, if you made an error, you can break everything and give a short circuit in you whole project by soldering the wrong things together.
 
+2. Dimensions in the 3D printed case - during modeling, you need to know the exact dimension of everything that you need to put inside the case, I did like 7 prints and just the last one was, finally, in the write dimensions. Specially while working with the prints in Hybrid Lab, the prints are not that accurate, so you need to do your print according to the behavior in the print. This is one of the bug that made the 3D print so hard.
+
+3. 3D Modeling - getting the dimensions right was not the only problem in 3D printing. I was trying to use the 3D printed case with the leather strap that I bought. But I had to redo the model after every print, because the angle and the size of the handles was never right. The handles were not in the right angle and it made the watch look really strange in the wrist. I did a lot of research in watches to understand the right angles to make it work. 
+
+4. Connecting the FLORA - After assembling all the electronic parts, I connected the FLORA with my computer but the Arduino IDE software couldn’t recognize the Flora, so me and J.D. started looking for the answer on how to make it work, after some research, we found out that you need to download Arduino Board extensions from Adafruit to make the software recognize the Flora.
+
+5. Understanding the how the GPS module works with the code examples from Adafruit. All the logics and math in it it’s really complex and hard to understand.
+
+6. For some reason the USB port stopped working and I the computer couldn’t recognize the USB from my Flora again. I ask for help from everyone in the Hybrid Lab and nobody could figure out what was happening, so I ordered a new Flora main board because we all thought the USB port was broken. But in the programming class, J.D. just needed to turn the reset button in the Flora and it came back to life, it was working perfectly.
+
+7. Calibrating the GPS - the GPS navigation mode and Compass mode was working but it was clear that was not sending me to the right place. So I needed to stay comparing where the lights pointed in the NeoPixel ring to the compass in my cellphone. After a while I got the coordinates right. 
+
+8. I tried to make the clock more intuitive for the user, so I did another code with some different example watch code. I could make it work, but it was not working perfectly, it had some bugs, kept blinking and the hours didn’t pass, I needed to keep reconnecting to update the hour. So I left that code aside, but I’ll try to work on it over the break.
+
+9. I was trying to make the GPS navigation mode more intuitive for the user. In the code, the path between starting point and destination is a trip divided in 5 parts. In the beginning of your trip (the first two parts), the lights sending you to the right place is yellow, when you’re getting closer (the second two parts) the lights will turn green and in the last part, when you arrive in your destination, a rainbow mode will start in all LEDs, showing that you’ve got to the right location. (In the video, I hadn’t made these changes yet, so the right path is always yellow, and when you’re going to a wrong point, it’s green)
